@@ -2,13 +2,12 @@ import os
 import filecmp
 from dateutil.relativedelta import *
 from datetime import date
-
+import csv
 
 def getData(file):
-# get a list of dictionary objects from the file
-#Input: file name
-#Ouput: return a list of dictionary objects where
-#the keys are from the first row in the data. and the values are each of the other rows
+	inFile = open(file,"r")
+	lines = inFile.readlines()
+	inFile.close()
 
 	pass
 
